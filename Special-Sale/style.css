@@ -280,3 +280,79 @@ header {
   font-size: 30px;
   font-weight: 500;
 }
+
+.gaming-case {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  height: 80vh;
+  background-image: url(./assets/gaming-case-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+
+.gaming-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url(./assets/gaming-container-bg.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  margin: auto;
+}
+
+.gaming-case-left {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-pc {
+  width: 650px;
+}
+
+.gaming-case-right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.gaming-case-right h1 {
+  font-size: 65px;
+  font-weight: 500;
+}
+
+.gaming-case-right p {
+  font-size: 14px;
+  color: white;
+  line-height: 1.5;
+  width: 350px;
+}
+
+.gaming-case-right button {
+  width: 160px;
+  height: 45px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  color: #234383;
+  font-size: 20px;
+  background: #c1d0ef;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.gaming-case-right button:hover {
+  transition: all 0.5s ease-in-out;
+  background: #82c4f2;
+  color: #333;
+}

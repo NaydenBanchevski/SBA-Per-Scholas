@@ -140,6 +140,7 @@ header {
 }
 
 .hero-title-container button:hover {
+  transition: all 0.5s ease-in-out;
   background: #82c4f2;
   color: #333;
 }
