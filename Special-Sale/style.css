@@ -112,16 +112,17 @@ header {
 }
 
 .hero-laptops-title {
+  margin-top: 50px;
   font-size: 45px;
   color: #55a2a6;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .laptop-brands-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  width: 1200px;
 }
 
 .brand-img {
@@ -147,4 +148,135 @@ header {
 .graphic-subtext:hover {
   color: #50afc9;
   transition: all 0.5s ease;
+}
+
+.hero-graphics {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-graphics-title {
+  font-size: 45px;
+  color: #55a2a6;
+  margin-top: 50px;
+}
+.hero-graphics-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1000px;
+  margin-top: -150px;
+}
+
+.hero-graphics-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.glow {
+  position: absolute;
+  left: 0;
+  width: 1200px;
+  z-index: -1;
+}
+
+.hero-graphics-img .graphic-card {
+  margin-top: 40px;
+  width: 800px;
+  height: 800px;
+}
+
+.hero-graphics-params {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.params {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 2px solid #55a2a6;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  font-size: 30px;
+  background: #000;
+}
+
+.params:hover {
+  transform: scale(1.02);
+  box-shadow: 0 1px 10px 0px #50afc9;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-parts {
+  margin-top: -150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-parts-title {
+  font-size: 45px;
+  color: #55a2a6;
+}
+
+.parts-container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+}
+
+.part {
+  display: flex;
+  height: 200px;
+  width: 400px;
+  border: 2px solid #55a2a6;
+  border-radius: 10px;
+  justify-content: start;
+  gap: 15px;
+  background-color: black;
+}
+
+.part:hover {
+  transform: scale(1.02);
+  box-shadow: 0 1px 10px 0px #50afc9;
+  transition: all 0.3s ease-in-out;
+}
+
+.part-img {
+  display: flex;
+}
+
+.parts-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px 0 0 10px;
+}
+
+.hero-parts-text {
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.hero-parts-text h3 {
+  font-size: 30px;
+  font-weight: 500;
 }
