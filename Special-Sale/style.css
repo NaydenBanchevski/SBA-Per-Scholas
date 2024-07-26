@@ -17,7 +17,6 @@ body {
   flex-direction: column;
   color: var(--main-color);
   align-items: center;
-  justify-content: center;
 }
 
 header {
@@ -138,11 +137,12 @@ header {
 }
 
 .graphic-subtext {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 28px;
   margin-top: 10px;
   font-weight: 400;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .graphic-subtext:hover {
@@ -355,4 +355,98 @@ header {
   transition: all 0.5s ease-in-out;
   background: #82c4f2;
   color: #333;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 50px;
+  margin: 50px;
+}
+.form-title {
+  margin-bottom: 25px;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.img-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-form-container img {
+  width: 574px;
+}
+
+.form-content {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 475px;
+  background-color: #19242a;
+  padding: 30px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.form-container input {
+  width: 90%;
+  background: var(--main-color);
+  border-radius: 15px;
+  padding: 25px 20px;
+  outline: none;
+  border: none;
+  margin: 10px 0 10px 0;
+}
+
+.form-container input::placeholder {
+  color: #808fac;
+  font-size: 20px;
+}
+
+.form-container input:focus::placeholder {
+  color: transparent;
+}
+
+.form-container button {
+  background-color: var(--main-color);
+  border: none;
+  padding: 15px 40px 15px 40px;
+  color: #234383;
+  font-weight: 500;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.form-container button:hover {
+  transition: all 0.5s ease-in-out;
+  background: #82c4f2;
+  color: #333;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+footer hr {
+  background-color: #55a2a6;
+  height: 1px;
+  border: none;
 }

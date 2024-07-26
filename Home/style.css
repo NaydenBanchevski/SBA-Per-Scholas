@@ -247,5 +247,16 @@ header {
 }
 
 footer {
-  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+footer hr {
+  background-color: #55a2a6;
+  height: 1px;
+  border: none;
 }
