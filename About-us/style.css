@@ -2,18 +2,19 @@
   margin-top: -120px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   width: 100%;
   background-image: url(./assets/about-us-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-  height: 300vh;
+  height: 270vh;
   gap: 100px;
 }
 
 .about-us-title-container {
-  margin-top: 500px;
+  margin-top: 400px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -23,7 +24,7 @@
 
 .about-us-title {
   width: 100%;
-  font-size: 45px;
+  font-size: 65px;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -39,6 +40,7 @@
   background-image: url(./assets/background-section-1.png);
   background-size: cover;
   border-radius: 15px;
+  background-color: black;
 }
 
 .about-us-section-title {
@@ -62,6 +64,7 @@
   background-image: url(./assets/section-2-bg.png);
   background-size: cover;
   border-radius: 15px;
+  background-color: black;
 }
 
 .phone-container {
@@ -72,12 +75,13 @@
 }
 .phone-frame {
   width: 420px;
+  z-index: 1;
 }
 .phone-screen {
   position: absolute;
   width: 200px;
   left: 70px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .about-us-section-2-info {
@@ -107,4 +111,35 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.section-3 {
+  margin-top: 200px;
+  height: 50vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 0;
+}
+
+.robo-hands {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+}
+
+.section-3-logo {
+  margin-top: 100px;
+  width: 300px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.section-3-subtext {
+  margin-top: -55px;
+  font-size: 27px;
+  font-weight: 400;
 }
