@@ -1,44 +1,60 @@
 .about-us {
-  margin-top: -120px;
   display: flex;
-
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  background-image: url(./assets/about-us-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  gap: 125px;
+  gap: 150px;
 }
 
-.about-us-title-container {
-  margin-top: 400px;
+span {
+  font-size: 85px;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(86, 115, 195),
+    rgb(81, 197, 203)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}
+
+.about-us-hero {
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  position: relative;
+  margin-bottom: 50px;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 60%;
-  height: 80vh;
 }
 
-.about-us-title {
-  width: 100%;
-  font-size: 65px;
+.hero-title {
+  margin-top: 250px;
+  width: 60%;
+  font-size: 75px;
   font-weight: 400;
   margin-bottom: 0;
+  z-index: 2;
+}
+.laptop-img {
+  margin-top: -400px;
+  margin-bottom: -250px;
+  display: flex;
+  width: 100%;
+  z-index: -1;
 }
 
 .about-us-section-1 {
-  margin-top: -200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
   width: 60%;
-  height: 400px;
-  padding: 20px;
+  padding: 60px;
   background-image: url(./assets/background-section-1.png);
   background-size: cover;
   border-radius: 15px;
-  background-color: black;
+  z-index: 1;
 }
 
 .about-us-section-title {
@@ -56,13 +72,12 @@
 .about-us-section-2 {
   display: flex;
   width: 60%;
-  padding: 20px;
+  padding: 60px;
   justify-content: space-around;
   align-items: center;
   background-image: url(./assets/section-2-bg.png);
   background-size: cover;
   border-radius: 15px;
-  background-color: black;
 }
 
 .phone-container {
@@ -71,15 +86,8 @@
   align-items: center;
   position: relative;
 }
-.phone-frame {
-  width: 420px;
-  z-index: 1;
-}
-.phone-screen {
-  position: absolute;
-  width: 200px;
-  left: 70px;
-  z-index: 0;
+.phone-img {
+  border-radius: 50px;
 }
 
 .about-us-section-2-info {
@@ -213,8 +221,7 @@ select option {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 57%;
-  height: 60vh;
+  width: 60%;
   background-image: url(./assets/Need\ A\ Bulk.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -225,4 +232,162 @@ select option {
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    width: 100%;
+  }
+  span {
+    font-size: 60px;
+  }
+
+  .about-us-hero {
+    flex-direction: column-reverse;
+  }
+  .hero-title {
+    width: 100%;
+    font-size: 50px;
+    margin-top: 200px;
+    line-height: 65px;
+    margin-left: 40px;
+  }
+  .laptop-img {
+    margin-top: 0;
+    width: 150%;
+  }
+  .about-us-section-1 {
+    width: 85%;
+    padding: 20px;
+  }
+  .about-us-section-2 {
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px 20px 50px;
+    margin: 0;
+  }
+
+  .phone-img {
+    margin: 0;
+    padding: 0;
+    scale: 75%;
+  }
+
+  .about-us-section-title {
+    font-size: 30px;
+  }
+  .about-us-section-2-info {
+    width: 120%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-us-section-paragraph {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .form-container {
+    margin: 0px;
+    width: 80%;
+  }
+  .about-us-form {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+  .section-3 {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    margin-bottom: 100px;
+    padding: 0;
+  }
+  .about-us-form-title {
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .robo-hands {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .section-3-logo {
+    width: 120px;
+    margin-bottom: 31px;
+  }
+
+  .section-3-subtext {
+    font-size: 11px;
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-title {
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+  .section-3-logo {
+    width: 200px;
+    margin-top: 0;
+  }
+  .section-3-subtext {
+    font-size: 18px;
+    margin-top: -40px;
+  }
+  .form-container {
+    scale: 0.75;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .about-us-section-2-info {
+    scale: 0.85;
+  }
+  .about-us-section-2 {
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .about-us-section-title {
+    font-size: 30px;
+  }
+
+  .about-us-section-paragraph {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .about-us {
+    width: 60%;
+  }
+
+  .hero-title {
+    font-size: 65px;
+  }
+  span {
+    font-size: 65px;
+  }
+  .laptop-img {
+    margin-top: -300px;
+    margin-bottom: -300px;
+  }
+
+  .section-3 {
+    margin-top: 50px;
+  }
 }

@@ -104,12 +104,12 @@ header {
     justify-content: space-evenly;
     width: 225px;
   }
-  .nav-links a {
-    font-size: 14px;
+  .nav-links a p {
+    font-size: 12px;
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 478px) {
   .hidden {
     display: none;
   }
@@ -122,12 +122,12 @@ header {
     justify-content: space-evenly;
     width: 225px;
   }
-  .nav-links a {
-    font-size: 14px;
+  .nav-links a p {
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 768px) {
   .hidden {
     display: none;
   }
