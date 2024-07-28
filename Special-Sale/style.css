@@ -275,11 +275,14 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin: 50px;
+
   margin: 50px;
 }
 .form-title {
-  margin-bottom: 25px;
+  display: flex;
+  width: -100%;
+  text-align: center;
+  margin-bottom: 55px;
   font-size: 48px;
   font-weight: 500;
 }
@@ -305,13 +308,11 @@
 .form-container {
   display: flex;
   flex-direction: column;
-  width: 350px;
-  height: 475px;
   background-color: #19242a;
-  padding: 30px;
+  padding: 50px;
   border-radius: 10px;
-  justify-content: space-evenly;
   align-items: center;
+  gap: 20px;
 }
 .form-container input {
   width: 90%;
@@ -320,7 +321,8 @@
   padding: 25px 20px 20px 20px;
   outline: none;
   border: none;
-  margin: 10px 0 10px 0;
+  color: #808fac;
+  font-size: 20px;
 }
 
 .form-container input::placeholder {
@@ -340,10 +342,175 @@
   font-weight: 500;
   border-radius: 30px;
   font-size: 20px;
+  margin-top: 20px;
 }
 
 .form-container button:hover {
   transition: all 0.5s ease-in-out;
   background: #82c4f2;
   color: #333;
+}
+
+select {
+  width: 102%;
+  background: var(--main-color);
+  border-radius: 15px;
+  padding: 15px 20px 15px 20px;
+  outline: none;
+  border: none;
+  color: #808fac;
+  font-size: 20px;
+  border-right: 16px solid transparent;
+}
+
+select option {
+  color: #808fac;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 430px) {
+  .img-form-container img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 430px) {
+  .img-form-container img {
+    display: none;
+  }
+  .laptop-brands-section {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .img-form-container img {
+    display: none;
+  }
+  .contact-form-container {
+    margin-top: 0;
+  }
+  .form-container {
+    min-width: 350px;
+    margin-left: 0;
+  }
+  .parts-container {
+    width: 700px;
+  }
+  .hero-parts-title {
+    margin-bottom: 50px;
+  }
+  .glow {
+    width: 100%;
+  }
+
+  .gaming-case {
+    scale: 0.65;
+    margin-top: 0px;
+  }
+
+  .hero-graphics-section {
+    margin-top: -100px;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-bottom: 250px;
+    justify-content: center;
+    gap: 0;
+  }
+  .hero-graphics-img {
+    margin-left: 125px;
+    margin-bottom: -150px;
+  }
+  .gaming-case-left {
+    position: relative;
+    z-index: -2;
+  }
+  .gaming-container {
+    z-index: -1;
+  }
+  .gaming-case {
+    width: 140%;
+  }
+  .game-pc {
+    position: absolute;
+    z-index: -1;
+    left: -120px;
+    opacity: 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .laptop-brands-section {
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .img-form-container img {
+    display: none;
+  }
+  .contact-form-container {
+    margin-top: 0;
+  }
+  .form-container {
+    min-width: 350px;
+    margin-left: 0;
+  }
+  .parts-container {
+    width: 700px;
+  }
+  .glow {
+    width: 100%;
+  }
+
+  .gaming-case {
+    scale: 0.65;
+    margin-top: 0px;
+  }
+
+  .hero-graphics-section {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .form-container {
+    min-width: 350px;
+    margin-top: 50px;
+  }
+  .laptop-brands-section {
+    width: 1000px;
+  }
+  .parts-container {
+    width: 1000px;
+  }
+
+  .gaming-case {
+    scale: 0.8;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .img-form-container img {
+    width: 400px;
+    margin-left: 50px;
+  }
+  .form-container {
+    min-width: 350px;
+
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .body {
+    max-width: 1200px;
+  }
+  .laptop-brands-section {
+    width: 1000px;
+  }
+  .parts-container {
+    width: 1200px;
+  }
+
+  .hero-graphics-section {
+    width: 1200px;
+  }
+  .glow {
+    width: 100%;
+  }
 }

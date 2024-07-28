@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="../style-components/header.css" />
     <link rel="stylesheet" href="../style-components/footer.css" />
     <title>Special Sale</title>
+    <style>
+      html,
+      body {
+        overflow-x: hidden;
+      }
+    </style>
   </head>
   <body>
     <header>
       <div class="nav-container-1">
         <div class="nav-container-left">
           <div class="img-container">
-            <img src="../assets/image.png" alt="logo" class="logo" />
+            <a href="../Home/index.html"
+              ><img src="../assets/image.png" alt="logo" class="logo"
+            /></a>
             <p class="logo-subtext">M TECH GROUP</p>
           </div>
         </div>
@@ -168,9 +176,16 @@
           <img src="./assets/robot.png" alt="robot" />
         </div>
         <div class="form-container">
+          <select>
+            <option selected disabled>Select Model</option>
+            <option>LENOVO T450 550 AED</option>
+            <option>HP 640 G3 575 AED</option>
+            <option>LENOVO T470S 815 AED</option>
+            <option>HP 850 G5 810 AED</option>
+          </select>
           <input type="text" placeholder="Full Name" />
-          <input type="text" placeholder="Full Name" />
-          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Phone Number" />
           <button>Submit</button>
         </div>
       </div>
