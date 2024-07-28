@@ -289,9 +289,11 @@ select option {
     font-size: 20px;
     font-weight: 300;
   }
+
   .form-container {
     margin: 0px;
     width: 80%;
+    scale: 0.8;
   }
   .about-us-form {
     width: 90%;
